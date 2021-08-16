@@ -1,4 +1,4 @@
-# [General Assembly - Project 03] Pistis Trust
+# General Assembly - Project 03: Pistis Trust.
 
 ## Overview
 
@@ -16,11 +16,15 @@ To explore the app, use these login credentials:
 + Email: admin@email.com
 + Password: pass
 
+<br />
+
 ## Team members
 
 + **Richard Knight:** https://github.com/RichardKnight88,
 + **Adrian Pantea:** https://github.com/adrianp2021,
 + **Vania Tominc (me):** https://github.com/VaniaTominc.
+
+<br />
 
 ## Table of contents
 
@@ -48,6 +52,7 @@ To explore the app, use these login credentials:
    - Extra features
    - Key learnings
 
+<br />
 
 ## Brief
 
@@ -58,6 +63,8 @@ To explore the app, use these login credentials:
 + **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut.
 + **Have a visually impressive design** to kick your portfolio up a notch and have something to wow future clients & employers.
 + **Be deployed online** so it's publicly accessible.
+
+<br />
 
 ## Technologies used
 
@@ -129,16 +136,17 @@ To explore the app, use these login credentials:
 </p>
 
    + Go to ```localhost:3000``` in the browser to see the app.
+<br />
 
 ## Process
 
 + ### Planning
 
-#### ➡️  Concept
+#### ➡️ Concept
 
 The idea for the project came to us as we discussed our interests and began to think about a theme for our project. Because we all love history, especially Greek mythology, we wanted to create a page dedicated to Greek Gods. Since there are already many similar websites on the Internet, we wanted to create our app uniquely, with added functionality. We thought it would be a cool challenge to build a clone of TrustPilot where users could share their experiences about Greek deities, while Greek deities could promote their own brand/business. Even the name of our app, the Pistis Trust, was inspired by Greek mythology. Pistis was the personification of good faith, trust, and reliability. We thought this was an excellent name for our website.
 
-#### ➡️  Trello organisation
+#### ➡️ Trello organisation
 
 Because there were so many functionalities on the back-end and components on the front-end that we wanted to implement in our project, but only three of us, we decided to use Trello to organize the project into smaller sections. We decided to set the back-end together, and then do the front-end separately, to maximize our time, by delegating different components to each group member. As the timeframe was short, and we knew the project was the biggest we’d done yet, we met up on Zoom each day from beginning to end, and we were just a call away if someone needed extra help to solve the potential coding issue. We also used Slack to send ideas, or warnings, if two people worked independently on the same component to prevent potential merging conflicts.
 
@@ -148,17 +156,17 @@ Because there were so many functionalities on the back-end and components on the
 
 + ### Backend
 
-### Setup
+#### ➡️ Setup
 
 We created our back-end together so that there was no confusion about any models and databases, but also to consolidate the concepts that we learned in our lectures. This was a splendid idea, because by working together we made the process of setting up the back-end less complicated and managed to do it in record time.
 
 To be able to achieve this, we used VSCode live share where one of us was typing. By using this approach of coding, we could also discover quicker whether there was anything missing in the code that maybe the person typing has missed. All in all, it made our coding process smoother and less error-prone.
 
-### Seeding data in our database
+#### ➡️ Seeding data in our database
 
 In terms of our API, we tried to find an API that could meet our criteria online. We wanted an API that would have more comprehensive detail for each Greek God, including description, familiar relationship, their powers, etc. This proved to be a huge challenge. Most of the APIs we found online were not working or abandoned. For the latter, I am not even surprised, because if you do a Google search about Greek mythology, you can see there are hundreds and hundreds of different deities in Greek mythology. There was nothing to do, but to build our database. Google, Wikipedia, and some other websites became my best friends for finding any data about Greek Gods.
 
-### Models, Views, Controllers and middlewares
+#### ➡️ Models, Views, Controllers and middlewares
 
 Knowing we had the data to support our app, we moved on to designing our Models. We created two main schemas: one for Gods and one for users.
 
@@ -195,7 +203,7 @@ We double-checked all our routes in Insomnia, to ensure that we could log in, re
 
 + ### Frontend
 
-#### Components
+#### ➡️ Components
 
 Once we understood which pages we would have on our front-end, we discussed who would do which React component. This does not mean everyone focused only on their component. Since we were in three, we have been aware that if we wanted to build as much as possible into the front-end, we would have to work in pairs or all of us together to maximize time as much as possible. It happened several times when someone began to build a component that was then taken over by another team member, who then finished building it.
 
@@ -300,7 +308,7 @@ Once a God is registered, he is redirected to the page on which he can create hi
 
 A God can access edit / delete his page either from his profile page or directly from his ```GodsInfoPage```. When he updates his data, he can also change his logo. The original logo is only a placeholder image because originally there was a plan to add the functionality where a God can upload his logo when creating his page.
 
-### Styling
+#### ➡️ Styling
 
 For the third project, we decided to use React Semantic UI in addition to Bulma. We wanted to challenge ourselves and try to use a CSS framework we had not used before. Looking back, it was an amusing experience. Both frameworks use similar names, and it often happened that the final result was not the one we tried to achieve. Also, Bulma and React Semantic UI caused problems if we wanted to use our CSS. Otherwise, we were fortunate to work on the styling from the beginning, and we could solve the problems caused by CSS frameworks during the project week.
 
@@ -312,7 +320,7 @@ I created all the assets shown below using Adobe Photoshop. I found all the imag
 
 **ADD ALL IMAGES.**
 
-### App walkthrough
+#### ➡️ App walkthrough
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/129618954-532843f7-651c-4eae-a863-818e73c7af82.png">
@@ -369,6 +377,8 @@ I created all the assets shown below using Adobe Photoshop. I found all the imag
   <img src="https://user-images.githubusercontent.com/83227280/129619329-8ae33002-2bc7-4b24-a918-c351ff407084.png">
 </p>
 
+<br />
+
 ## Bugs, challenges, wins
 
 + ### Bugs
@@ -388,6 +398,8 @@ I created all the assets shown below using Adobe Photoshop. I found all the imag
    - Building our own database.
    - Going further with React.js and building more complex components.
    - Managing to implement almost all functions on the front-end that we built on the back-end.
+
+<br />
 
 ## Extra features and Key learnings
 
