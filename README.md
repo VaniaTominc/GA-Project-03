@@ -1,132 +1,130 @@
-OVERVIEW
+# [General Assembly - Project 03] Pistis Trust
+
+## Overview
 
 Pistis Trust, a TrustPilot inspired app, is an app where customers can share their experiences about Greek Gods and where Greek Gods can promote their own brand/business. Customers and Gods can register, and while customers can only post their comments and rank their experiences, Gods can also create their own “business” sub-sites. 
 
-Timeframe
++ ### Timeframe
 
 9 days.
 
-Demo version
-
-/ 
-
-Deployed version
++ ### Deployed version
 
 https://pistis-trust.herokuapp.com/ 
 
 To explore the app, use these login credentials:
-Email: admin@email.com
-Password: pass
++ Email: admin@email.com
++ Password: pass
 
-TEAM MEMBERS
+## Team members
 
-Richard Knight: https://github.com/RichardKnight88,
-Adrian Pantea: https://github.com/adrianp2021,
-Vania Tominc (me): https://github.com/VaniaTominc.
++ **Richard Knight:** https://github.com/RichardKnight88,
++ **Adrian Pantea:** https://github.com/adrianp2021,
++ **Vania Tominc (me):** https://github.com/VaniaTominc.
 
-TABLE OF CONTENTS
-Brief
-Timeframe
-Technologies used
-Frontend
-Backend
-Development tools
-Installation
-Process
-Planning
-Concept
-Organisation
-Backend
-Setup
-Frontend
-Components
-Styling
-Project walkthrough
-Bugs, blockers, wins
-Extra features and key learnings
-Extra features
-Key learnings
+## Table of contents
 
-BRIEF
-
-Build a full-stack application by making your own backend and your own front-end.
-Use an Express API to serve your data from a Mongo database.
-Consume your API with a separate front-end built with React.
-Be a complete product which most likely means multiple relationships and CRUD functionality for at least a couple of models.
-Implement thoughtful user stories/wireframes that are significant enough to help you know which features are core MVP and which you can cut.
-Have a visually impressive design to kick your portfolio up a notch and have something to wow future clients & employers.
-Be deployed online so it's publicly accessible.
-
-TECHNOLOGIES USED
-
-Frontend:
-
-React.js,
-Axios,
-Semantic UI React,
-Bulma,
-SASS,
-CSS3.
-
-Backend:
-
-Node.js,
-MongoDB,
-Mongoose,
-Express,
-React Router DOM,
-Bcrypt,
-JsonWebToken.
++ Brief
++ Technologies used
+   - Frontend
+   - Backend
+   - Development tools
++ Installation
++ Process
+   - Planning
+     + Concept
+     + Organisation
+   - Backend
+     + Setup
+   - Frontend
+     + Components
+     + Styling
+   - Project walkthrough
++ Bugs, blockers, wins
+   - Bugs
+   - Blockers
+   - Wins
++ Extra features and key learnings
+   - Extra features
+   - Key learnings
 
 
+## Brief
 
-Development tools:
++ **Build a full-stack application** by making your own backend and your own front-end.
++ **Use an Express API** to serve your data from a Mongo database.
++ **Consume your API with a separate front-end** built with React.
++ **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models.
++ **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut.
++ **Have a visually impressive design** to kick your portfolio up a notch and have something to wow future clients & employers.
++ **Be deployed online** so it's publicly accessible.
 
-Visual Studio Code,
-Insomnia,
-Yarn,
-Git (branching) & GitHub,
-Google Chrome development tools,
-Trello board for planning,
-Adobe Photoshop (for images),
-Zoom,
-Slack,
-Heroku (deployment).
+## Technologies used
 
-INSTALLATION
++ **Frontend:**
+  - React.js,
+  - Axios,
+  - Semantic UI React,
+  - Bulma,
+  - SASS,
+  - CSS3.
 
-Clone or download GA-Project-03.
++ **Backend:**
+  - Node.js,
+  - MongoDB,
+  - Mongoose,
+  - Express,
+  - React Router DOM,
+  - Bcrypt,
+  - JsonWebToken.
 
++ **Development tools:**
+  - Visual Studio Code,
+  - Insomnia,
+  - Yarn,
+  - Git (branching) & GitHub,
+  - Google Chrome development tools,
+  - Trello board for planning,
+  - Adobe Photoshop (for images),
+  - Zoom,
+  - Slack,
+  - Heroku (deployment).
 
+## Installation
 
-Inside your Terminal move to your desired folder and use command.
++ Clone or download **GA-Project-03**.
 
+![image](https://user-images.githubusercontent.com/83227280/129613717-1ed9b348-f6e1-4e3f-b439-18223222bce3.png)
 
++ Inside your Terminal move to your desired folder and use command:
 
-Run these in Terminal:
+![image](https://user-images.githubusercontent.com/83227280/129613772-cefffd7a-dbcc-4032-a0d2-eca0c0c82636.png)
 
-mongod --dbpath ~/data/db to run Mongo.
++ Run these in Terminal:
 
-Open the project and open a terminal inside your chosen code editor. 
+  - ```mongod --dbpath ~/data/db``` to run Mongo.
 
-In terminal type gco development > gco main > git merge development. 
++ Open the project and open a terminal inside your chosen code editor. 
 
-Split terminal in two windows: 
+  - In terminal type ```gco development``` > ```gco main``` > ```git merge development```. 
 
-Use 1st terminal for back-end and type:
-yarn to install yarn package,
-yarn seed to seed database,
-yarn serve to run server.
-Use 2nd terminal for front-end by typing client and type:
-yarn && yarn start. First command will install yarn package, the second command will start front-end server.
+  - Split terminal in two windows: 
 
- 
+    + Use 1st terminal for back-end and type:
+      - ```yarn``` to install yarn package,
+      - ```yarn seed``` to seed database,
+      - ```yarn serve``` to run server.
+      
+    + Use 2nd terminal for front-end by typing client and type:
+      - ```yarn && yarn start```. First command will install yarn package, the second command will start front-end server.
 
-Go to localhost:3000 in the browser to see the app.
+![image](https://user-images.githubusercontent.com/83227280/129614154-98dea822-3e26-479d-aa48-f71f599a7dc8.png)
 
-PROCESS
+   + Go to localhost:3000 in the browser to see the app.
 
-Planning
+## Process
+
++ ### Planning
 
 Concept
 
@@ -138,7 +136,7 @@ Because there were so many functionalities on the back-end and components on the
 
 
 
-Backend
++ ### Backend
 
 Setup
 
@@ -175,7 +173,7 @@ We double-checked all our routes in Insomnia, to ensure that we could log in, re
 
 
 
-Frontend
++ ### Frontend
 
 Components
 
