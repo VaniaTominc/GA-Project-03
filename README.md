@@ -94,11 +94,17 @@ To explore the app, use these login credentials:
 
 + Clone or download **GA-Project-03**.
 
-![image](https://user-images.githubusercontent.com/83227280/129613717-1ed9b348-f6e1-4e3f-b439-18223222bce3.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129613717-1ed9b348-f6e1-4e3f-b439-18223222bce3.png">
+</p>
+
 
 + Inside your Terminal move to your desired folder and use command:
 
-![image](https://user-images.githubusercontent.com/83227280/129613772-cefffd7a-dbcc-4032-a0d2-eca0c0c82636.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129613772-cefffd7a-dbcc-4032-a0d2-eca0c0c82636.png">
+</p>
+
 
 + Run these in Terminal:
 
@@ -118,23 +124,27 @@ To explore the app, use these login credentials:
     + Use 2nd terminal for front-end by typing client and type:
       - ```yarn && yarn start```. First command will install yarn package, the second command will start front-end server.
 
-![image](https://user-images.githubusercontent.com/83227280/129614154-98dea822-3e26-479d-aa48-f71f599a7dc8.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129614154-98dea822-3e26-479d-aa48-f71f599a7dc8.png">
+</p>
 
-   + Go to localhost:3000 in the browser to see the app.
+   + Go to ```localhost:3000``` in the browser to see the app.
 
 ## Process
 
 + ### Planning
 
-### Concept
+#### ➡️  Concept
 
 The idea for the project came to us as we discussed our interests and began to think about a theme for our project. Because we all love history, especially Greek mythology, we wanted to create a page dedicated to Greek Gods. Since there are already many similar websites on the Internet, we wanted to create our app uniquely, with added functionality. We thought it would be a cool challenge to build a clone of TrustPilot where users could share their experiences about Greek deities, while Greek deities could promote their own brand/business. Even the name of our app, the Pistis Trust, was inspired by Greek mythology. Pistis was the personification of good faith, trust, and reliability. We thought this was an excellent name for our website.
 
-### Trello organisation
+#### ➡️  Trello organisation
 
 Because there were so many functionalities on the back-end and components on the front-end that we wanted to implement in our project, but only three of us, we decided to use Trello to organize the project into smaller sections. We decided to set the back-end together, and then do the front-end separately, to maximize our time, by delegating different components to each group member. As the timeframe was short, and we knew the project was the biggest we’d done yet, we met up on Zoom each day from beginning to end, and we were just a call away if someone needed extra help to solve the potential coding issue. We also used Slack to send ideas, or warnings, if two people worked independently on the same component to prevent potential merging conflicts.
 
-![image](https://user-images.githubusercontent.com/83227280/129617327-5bc60c1a-ffc1-4493-b9fc-2878959701b9.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129617327-5bc60c1a-ffc1-4493-b9fc-2878959701b9.png">
+</p>
 
 + ### Backend
 
@@ -154,12 +164,18 @@ Knowing we had the data to support our app, we moved on to designing our Models.
 
 ```godsSchema``` has an embedded ```commentsSchema```.
 
-![image](https://user-images.githubusercontent.com/83227280/129617460-dcf36de0-a272-430e-823f-183808d46963.png)
-![image](https://user-images.githubusercontent.com/83227280/129617472-fbff134c-3e9b-43d1-be1c-dfe62784f5f0.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129617460-dcf36de0-a272-430e-823f-183808d46963.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129617472-fbff134c-3e9b-43d1-be1c-dfe62784f5f0.png">
+</p>
 
 In contrast, ```userSchema``` additionally checks if a person registering is a God or just a customer.
 
-![image](https://user-images.githubusercontent.com/83227280/129617494-16f071f1-9f99-4c7d-b05f-a61288fb52d3.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129617494-16f071f1-9f99-4c7d-b05f-a61288fb52d3.png">
+</p>
  
 If a customer is a God, he/she/they have all the right to create their sub-site. Meanwhile, a regular customer doesn’t have this right and can only leave a comment.
 
@@ -167,11 +183,15 @@ We also decided which endpoints we would need (views) and which controller / req
 
 The last thing we had to do was to add middlewares: a ```secureRoute``` which gives permission to certain endpoints (i.e., customers can only edit/delete comments they have created themselves), but also ```deusRoute``` where only Gods have certain privileges like posting, editing or deleting their sub-sites.  
 
-![image](https://user-images.githubusercontent.com/83227280/129617585-90d1633d-4393-43c7-acb0-923851ae2d7d.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129617585-90d1633d-4393-43c7-acb0-923851ae2d7d.png">
+</p>
 
 We double-checked all our routes in Insomnia, to ensure that we could log in, register, and check the authentication permissions using token authorization. All tests were successful. All in all, the back-end setup went smoothly.
 
-![image](https://user-images.githubusercontent.com/83227280/129617604-117baba5-2ef4-4c0b-afda-bd8427e9acbc.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129617604-117baba5-2ef4-4c0b-afda-bd8427e9acbc.png">
+</p>
 
 + ### Frontend
 
@@ -187,42 +207,64 @@ The ```Navbar``` was quickly set up, but there were some problems when it came t
 
 Navbar changes its appearance depending on the screen size. If the screen is smaller than 1024px, the text hides inside the so-called burger icon and only appears if you click on the icon.
 
-![image](https://user-images.githubusercontent.com/83227280/129618127-4b62a814-f88b-4f70-915f-f8504005eef4.png)
-![image](https://user-images.githubusercontent.com/83227280/129618148-1e011b35-7602-41e4-8889-5aa9be6f980c.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618127-4b62a814-f88b-4f70-915f-f8504005eef4.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618148-1e011b35-7602-41e4-8889-5aa9be6f980c.png">
+</p>
 
 Navbar is visible in all components, except the landing page and the create-god component. Richard added this feature.
 
-![image](https://user-images.githubusercontent.com/83227280/129618185-55b4f049-0960-4715-abb0-52b7e2bc5269.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618185-55b4f049-0960-4715-abb0-52b7e2bc5269.png">
+</p>
 
    - #### God’s business profile page
 
 ```GodsInfoPage``` component is intended for the presentation of business, a.k.a representation of a God. When we built the back-end, we didn’t want to call the Gods by IDs, but by their names. When I called API, I thus called an individual God according to his name:
 
-![image](https://user-images.githubusercontent.com/83227280/129618238-927aa65f-b868-4737-98c7-5da19b30d672.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618238-927aa65f-b868-4737-98c7-5da19b30d672.png">
+</p>
 
 All the data of a God is then displayed on this page. Among other things, their specialization, the place of residence, an external website. Their external website leads to Wikipedia. For fun, I wrote a small function in which the domain of a God's website changes according to gender:
 
-![image](https://user-images.githubusercontent.com/83227280/129618251-c63e387c-1673-40cf-b951-f5ba3ca33b45.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618251-c63e387c-1673-40cf-b951-f5ba3ca33b45.png">
+</p>
 
    - #### Comments – CRUD
 
 ```Comments``` also appear on a God’s business sub-site. The user who wants to write a comment must log in. Only the owner of the comment can edit or delete it.
 
-![image](https://user-images.githubusercontent.com/83227280/129618309-f2ecca79-bf2a-44f0-9bc2-a8280c8c2d62.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618309-f2ecca79-bf2a-44f0-9bc2-a8280c8c2d62.png">
+</p>
 
 When writing a comment, the user is expected to write the title and main text and rate the experience. A particular challenge for me was the rating system. The customer determines his rating by clicking on the stars. For the stars, I used the Rating from the React Semantic UI. While I could simply solve the text and title of the text with:
 
-![image](https://user-images.githubusercontent.com/83227280/129618338-abdb8f08-b8a6-4fc1-ad37-a29ec6480bba.png)
-![image](https://user-images.githubusercontent.com/83227280/129618364-f392f861-373e-44ea-a029-21f64e578347.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618338-abdb8f08-b8a6-4fc1-ad37-a29ec6480bba.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618364-f392f861-373e-44ea-a029-21f64e578347.png">
+</p>
 
 The same could not be achieved for the rating system. The above function was not working. I resorted to googling where several people on StackOverFlow said that with the React Semantic UI, it would be impossible to get a rating value from clicking on the stars. Conditionally, it was possible, but the code was too complex. However, because I am headstrong by nature, I wanted to find my solution. In the end, I managed to do it more simply.
 
-![image](https://user-images.githubusercontent.com/83227280/129618406-2b8f2ec3-bbf8-4abe-90f8-8cc63ef9e324.png)
-![image](https://user-images.githubusercontent.com/83227280/129618430-c84c43ec-eeeb-4317-ba79-8df6c95ca78a.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618406-2b8f2ec3-bbf8-4abe-90f8-8cc63ef9e324.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618430-c84c43ec-eeeb-4317-ba79-8df6c95ca78a.png">
+</p>
 
 I also used similar logic in a separate component ```EditComment```, where the customer can update or delete his comment. Again, the comment can only be updated or deleted by its owner.
 
-![image](https://user-images.githubusercontent.com/83227280/129618482-7ac1c2a1-c5be-41c8-9b9e-f94cbf4bc088.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618482-7ac1c2a1-c5be-41c8-9b9e-f94cbf4bc088.png">
+</p>
 
    - #### Register
 
@@ -230,23 +272,31 @@ I worked with Adrian on this component. While he devoted himself to designing th
 
 After consulting Richard, we found a unique solution to our problem. Namely, Richard suggested we could solve our problem by checking the location from which the person wishing to register comes.
 
-![image](https://user-images.githubusercontent.com/83227280/129618533-e10e3222-eb5c-4592-9cc6-cdf64df2e053.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618533-e10e3222-eb5c-4592-9cc6-cdf64df2e053.png">
+</p>
 
 If a person comes from a page dedicated to registering a God, the value of ```isDeusUser``` changes from false to true.
 
-![image](https://user-images.githubusercontent.com/83227280/129618572-61ccd160-89d6-49bd-96d5-cd99f3b579f0.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618572-61ccd160-89d6-49bd-96d5-cd99f3b579f0.png">
+</p>
 
    - #### Login
 
 Adrian also started building this component. I only helped him with the implementation of the functions. The login page is the same for both the customer and a God. Additionally, one of the functions checks if the person who wants to log in is in the database.
 
-![image](https://user-images.githubusercontent.com/83227280/129618601-6043da91-50a4-4433-b6f0-a9ccb2b1d1b6.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618601-6043da91-50a4-4433-b6f0-a9ccb2b1d1b6.png">
+</p>
 
    - #### Post / edit / delete Gods
 
 Once a God is registered, he is redirected to the page on which he can create his page.
 
-![image](https://user-images.githubusercontent.com/83227280/129618644-15dd45b8-3af3-47ad-abf4-616eff8d1a7e.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618644-15dd45b8-3af3-47ad-abf4-616eff8d1a7e.png">
+</p>
 
 A God can access edit / delete his page either from his profile page or directly from his ```GodsInfoPage```. When he updates his data, he can also change his logo. The original logo is only a placeholder image because originally there was a plan to add the functionality where a God can upload his logo when creating his page.
 
@@ -264,25 +314,60 @@ I created all the assets shown below using Adobe Photoshop. I found all the imag
 
 ### App walkthrough
 
-![image](https://user-images.githubusercontent.com/83227280/129618954-532843f7-651c-4eae-a863-818e73c7af82.png)
-![image](https://user-images.githubusercontent.com/83227280/129618963-4a55788e-ea6a-434b-9d5f-5f1fc47f7c8f.png)
-![image](https://user-images.githubusercontent.com/83227280/129618971-9dba6d77-cabf-4f4b-871a-5b59758e4e6a.png)
-![image](https://user-images.githubusercontent.com/83227280/129618983-a1cd1377-58c9-497a-b1db-cf8d791adfec.png)
-![image](https://user-images.githubusercontent.com/83227280/129618994-78766984-7ff6-4344-b4e7-0e0f0ef744ab.png)
-![image](https://user-images.githubusercontent.com/83227280/129619004-cb8a484a-352a-4941-a278-76e0772a5f46.png)
-![image](https://user-images.githubusercontent.com/83227280/129619048-7b1981c2-8513-4d5a-a463-5cec15a398a1.png)
-![image](https://user-images.githubusercontent.com/83227280/129619093-42b30c06-ba5a-4308-b571-27b42f3de11f.png)
-![image](https://user-images.githubusercontent.com/83227280/129619111-cb100ca5-93a9-4c6d-8682-994f818e2b77.png)
-![image](https://user-images.githubusercontent.com/83227280/129619138-a367a814-274c-4678-a538-54fb17bbb57e.png)
-![image](https://user-images.githubusercontent.com/83227280/129619164-ebf534f7-563c-4e20-a9a7-099307b49d83.png)
-![image](https://user-images.githubusercontent.com/83227280/129619190-958e1c9d-eafd-4ee8-b1f2-2896654c0a5f.png)
-![image](https://user-images.githubusercontent.com/83227280/129619214-74c472ce-9795-45fd-b586-4cfaa75ee9cc.png)
-![image](https://user-images.githubusercontent.com/83227280/129619234-af4c67ea-61cd-4fc5-b15f-1296bdf42b32.png)
-![image](https://user-images.githubusercontent.com/83227280/129619257-92a036c3-45a8-4659-884f-165ef7f919ec.png)
-![image](https://user-images.githubusercontent.com/83227280/129619280-b2973a6f-4afa-4794-b45d-30a6afc4bb83.png)
-![image](https://user-images.githubusercontent.com/83227280/129619306-c916b9ab-4399-4535-bed5-ba0535e54060.png)
-![image](https://user-images.githubusercontent.com/83227280/129619329-8ae33002-2bc7-4b24-a918-c351ff407084.png)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618954-532843f7-651c-4eae-a863-818e73c7af82.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618963-4a55788e-ea6a-434b-9d5f-5f1fc47f7c8f.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618971-9dba6d77-cabf-4f4b-871a-5b59758e4e6a.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618983-a1cd1377-58c9-497a-b1db-cf8d791adfec.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129618994-78766984-7ff6-4344-b4e7-0e0f0ef744ab.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619004-cb8a484a-352a-4941-a278-76e0772a5f46.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619048-7b1981c2-8513-4d5a-a463-5cec15a398a1.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619093-42b30c06-ba5a-4308-b571-27b42f3de11f.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619111-cb100ca5-93a9-4c6d-8682-994f818e2b77.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619138-a367a814-274c-4678-a538-54fb17bbb57e.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619164-ebf534f7-563c-4e20-a9a7-099307b49d83.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619190-958e1c9d-eafd-4ee8-b1f2-2896654c0a5f.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619214-74c472ce-9795-45fd-b586-4cfaa75ee9cc.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619234-af4c67ea-61cd-4fc5-b15f-1296bdf42b32.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619257-92a036c3-45a8-4659-884f-165ef7f919ec.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619280-b2973a6f-4afa-4794-b45d-30a6afc4bb83.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619306-c916b9ab-4399-4535-bed5-ba0535e54060.png">
+</p>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/83227280/129619329-8ae33002-2bc7-4b24-a918-c351ff407084.png">
+</p>
 
 ## Bugs, challenges, wins
 
