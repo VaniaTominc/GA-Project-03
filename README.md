@@ -389,7 +389,7 @@ I created all the assets shown below using Adobe Photoshop. I found all the imag
 
    - Not having enough time to give admin extra rights on the front-end.
    - Not having enough time to sort the navbar view depending on meeting conditions, like what the user can view while logged in. 
-   - Building database. With so rich Greek mythology, it was impossible to include more Greek Gods than I managed to include at the end. There are hundred and hundred Greek deities and to include all of them it would take months and months to achieve it. 
+   - Building database. With so rich Greek mythology, it was impossible to include more Greek Gods than I managed to include at the end. There are hundreds and hundreds Greek deities and to include all of them it would take months and months to achieve it. 
 
 + ### Wins
 
