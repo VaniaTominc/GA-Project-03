@@ -339,6 +339,7 @@ I created all the assets shown below using Adobe Photoshop. I found all the imag
 
 #### ➡️ App walkthrough
 
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/129618954-532843f7-651c-4eae-a863-818e73c7af82.png" width="800">
 </p>
