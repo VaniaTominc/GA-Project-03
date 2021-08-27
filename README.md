@@ -314,7 +314,7 @@ For the third project, we decided to use React Semantic UI in addition to Bulma.
 
 There was significant CSS involved, which made it more complex and messy. Instead of working in separate SCSS files, we all worked inside of one combined SCSS. A recipe for disaster. Not due to styling, but due to Git. When it came to committing our branches to the development branch, each’s CSS code was overwriting the existing CSS code and, in many cases, deleting code. At one moment, I lost a day and a half of my work. Thankfully, I had a copy of my folder, so I could save some of my code. We realized it would be better if we do commits together and save our CSS code in a separate file if code was deleted. Also, we created separate SCSS files to prevent potential merging conflicts.
 
-##### Assets
+   - #### Assets
 
 I created all the assets shown below using Adobe Photoshop. I found all the images on the internet. 
 
