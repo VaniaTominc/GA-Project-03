@@ -314,61 +314,84 @@ For the third project, we decided to use React Semantic UI in addition to Bulma.
 
 There was significant CSS involved, which made it more complex and messy. Instead of working in separate SCSS files, we all worked inside of one combined SCSS. A recipe for disaster. Not due to styling, but due to Git. When it came to committing our branches to the development branch, each’s CSS code was overwriting the existing CSS code and, in many cases, deleting code. At one moment, I lost a day and a half of my work. Thankfully, I had a copy of my folder, so I could save some of my code. We realized it would be better if we do commits together and save our CSS code in a separate file if code was deleted. Also, we created separate SCSS files to prevent potential merging conflicts.
 
+##### Assets
+
+I created all the assets shown below using Adobe Photoshop. I found all the images on the internet. 
+
+<p align="center">
+  <img src="https://i.ibb.co/G0Sr2Jx/Apollo-Cube.png" width="300">
+  <img src="https://i.ibb.co/3CbNJmd/AresCube.png" width="300">
+  <img src="https://i.ibb.co/chb1L0D/Athena-Cube.png" width="300">
+  <img src="https://i.ibb.co/BnjWCzH/HadesPSD.png" width="300">
+  <img src="https://i.ibb.co/DQKJzBv/Poseidon-Cube.png" width="300">
+  <img src="https://i.ibb.co/p2XfVzj/ZeusCube.png" width="300">
+</p>
+
+<p align="center">
+  <img src="https://i.ibb.co/878JXTf/Logo-Image.png" width="300">
+  <img src="https://i.ibb.co/hDM7Sh7/demeter-horn-logo.png" width="300">
+</p>
+
+<p align="center">
+  <img src="https://i.ibb.co/NS1SJRd/hero-cracked-marble.jpg" width="500">
+  <img src="https://i.ibb.co/ZcTNSb9/marble-Background.png" width="500">
+</p>
+
 #### ➡️ App walkthrough
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129618954-532843f7-651c-4eae-a863-818e73c7af82.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129618954-532843f7-651c-4eae-a863-818e73c7af82.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129618963-4a55788e-ea6a-434b-9d5f-5f1fc47f7c8f.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129618963-4a55788e-ea6a-434b-9d5f-5f1fc47f7c8f.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129618971-9dba6d77-cabf-4f4b-871a-5b59758e4e6a.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129618971-9dba6d77-cabf-4f4b-871a-5b59758e4e6a.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129618983-a1cd1377-58c9-497a-b1db-cf8d791adfec.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129618983-a1cd1377-58c9-497a-b1db-cf8d791adfec.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129618994-78766984-7ff6-4344-b4e7-0e0f0ef744ab.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129618994-78766984-7ff6-4344-b4e7-0e0f0ef744ab.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619004-cb8a484a-352a-4941-a278-76e0772a5f46.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619004-cb8a484a-352a-4941-a278-76e0772a5f46.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619048-7b1981c2-8513-4d5a-a463-5cec15a398a1.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619048-7b1981c2-8513-4d5a-a463-5cec15a398a1.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619093-42b30c06-ba5a-4308-b571-27b42f3de11f.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619093-42b30c06-ba5a-4308-b571-27b42f3de11f.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619111-cb100ca5-93a9-4c6d-8682-994f818e2b77.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619111-cb100ca5-93a9-4c6d-8682-994f818e2b77.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619138-a367a814-274c-4678-a538-54fb17bbb57e.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619138-a367a814-274c-4678-a538-54fb17bbb57e.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619164-ebf534f7-563c-4e20-a9a7-099307b49d83.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619164-ebf534f7-563c-4e20-a9a7-099307b49d83.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619190-958e1c9d-eafd-4ee8-b1f2-2896654c0a5f.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619190-958e1c9d-eafd-4ee8-b1f2-2896654c0a5f.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619214-74c472ce-9795-45fd-b586-4cfaa75ee9cc.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619214-74c472ce-9795-45fd-b586-4cfaa75ee9cc.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619234-af4c67ea-61cd-4fc5-b15f-1296bdf42b32.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619234-af4c67ea-61cd-4fc5-b15f-1296bdf42b32.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619257-92a036c3-45a8-4659-884f-165ef7f919ec.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619257-92a036c3-45a8-4659-884f-165ef7f919ec.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619280-b2973a6f-4afa-4794-b45d-30a6afc4bb83.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619280-b2973a6f-4afa-4794-b45d-30a6afc4bb83.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619306-c916b9ab-4399-4535-bed5-ba0535e54060.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619306-c916b9ab-4399-4535-bed5-ba0535e54060.png" width="800">
 </p>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/83227280/129619329-8ae33002-2bc7-4b24-a918-c351ff407084.png">
+  <img src="https://user-images.githubusercontent.com/83227280/129619329-8ae33002-2bc7-4b24-a918-c351ff407084.png" width="800">
 </p>
 
 <br />
