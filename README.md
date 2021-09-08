@@ -29,36 +29,36 @@ To explore the app, use these login credentials:
 ## Table of contents
 
 + Brief
-+ Technologies used
-   - Frontend
-   - Backend
-   - Development tools
++ Technologies used:
+   - Frontend,
+   - Backend,
+   - Development tools.
 + Installation
 + Process
-   - Planning
-     + Concept
-     + Organisation
-   - Backend
-     + Setup
-   - Frontend
-     + Components
-     + Styling
-   - Project walkthrough
-+ Bugs, blockers, wins
-   - Bugs
-   - Blockers
-   - Wins
-+ Extra features and key learnings
-   - Extra features
-   - Key learnings
+   - Planning:
+     + Concept,
+     + Organisation.
+   - Backend:
+     + Setup.
+   - Frontend:
+     + Components,
+     + Styling.
+   - Project walkthrough.
++ Bugs, blockers, wins:
+   - Bugs,
+   - Blockers,
+   - Wins.
++ Future features and key learnings:
+   - Future features,
+   - Key learnings.
 
 <br />
 
 ## Brief
 
-+ **Build a full-stack application** by making your own backend and your own front-end.
++ **Build a full-stack application** by making your own backend and your own frontend.
 + **Use an Express API** to serve your data from a Mongo database.
-+ **Consume your API with a separate front-end** built with React.
++ **Consume your API with a separate frontend** built with React.
 + **Be a complete product** which most likely means multiple relationships and CRUD functionality for at least a couple of models.
 + **Implement thoughtful user stories/wireframes** that are significant enough to help you know which features are core MVP and which you can cut.
 + **Have a visually impressive design** to kick your portfolio up a notch and have something to wow future clients & employers.
@@ -123,13 +123,13 @@ To explore the app, use these login credentials:
 
   - Split terminal in two windows: 
 
-    + Use 1st terminal for back-end and type:
+    + Use 1st terminal for backend and type:
       - ```yarn``` to install yarn package,
       - ```yarn seed``` to seed database,
       - ```yarn serve``` to run server.
       
-    + Use 2nd terminal for front-end by typing client and type:
-      - ```yarn && yarn start```. First command will install yarn package, the second command will start front-end server.
+    + Use 2nd terminal for frontend by typing client and type:
+      - ```yarn && yarn start```. First command will install yarn package, the second command will start frontend server.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/129614154-98dea822-3e26-479d-aa48-f71f599a7dc8.png">
@@ -148,7 +148,8 @@ The idea for the project came to us as we discussed our interests and began to t
 
 #### ➡️ Trello organisation
 
-Because there were so many functionalities on the back-end and components on the front-end that we wanted to implement in our project, but only three of us, we decided to use Trello to organize the project into smaller sections. We decided to set the back-end together, and then do the front-end separately, to maximize our time, by delegating different components to each group member. As the timeframe was short, and we knew the project was the biggest we’d done yet, we met up on Zoom each day from beginning to end, and we were just a call away if someone needed extra help to solve the potential coding issue. We also used Slack to send ideas, or warnings, if two people worked independently on the same component to prevent potential merging conflicts.
+Because there were so many functionalities on the backend and components on the 
+end that we wanted to implement in our project, but only three of us, we decided to use Trello to organize the project into smaller sections. We decided to set the backend together, and then do the frontend separately, to maximize our time, by delegating different components to each group member. As the timeframe was short, and we knew the project was the biggest we’d done yet, we met up on Zoom each day from beginning to end, and we were just a call away if someone needed extra help to solve the potential coding issue. We also used Slack to send ideas, or warnings, if two people worked independently on the same component to prevent potential merging conflicts.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/129617327-5bc60c1a-ffc1-4493-b9fc-2878959701b9.png">
@@ -158,7 +159,7 @@ Because there were so many functionalities on the back-end and components on the
 
 #### ➡️ Setup
 
-We created our back-end together so that there was no confusion about any models and databases, but also to consolidate the concepts that we learned in our lectures. This was a splendid idea, because by working together we made the process of setting up the back-end less complicated and managed to do it in record time.
+We created our backend together so that there was no confusion about any models and databases, but also to consolidate the concepts that we learned in our lectures. This was a splendid idea, because by working together we made the process of setting up the backend less complicated and managed to do it in record time.
 
 To be able to achieve this, we used VSCode live share where one of us was typing. By using this approach of coding, we could also discover quicker whether there was anything missing in the code that maybe the person typing has missed. All in all, it made our coding process smoother and less error-prone.
 
@@ -195,7 +196,7 @@ The last thing we had to do was to add middlewares: a ```secureRoute``` which gi
   <img src="https://user-images.githubusercontent.com/83227280/129617585-90d1633d-4393-43c7-acb0-923851ae2d7d.png">
 </p>
 
-We double-checked all our routes in Insomnia, to ensure that we could log in, register, and check the authentication permissions using token authorization. All tests were successful. All in all, the back-end setup went smoothly.
+We double-checked all our routes in Insomnia, to ensure that we could log in, register, and check the authentication permissions using token authorization. All tests were successful. All in all, the backend setup went smoothly.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/129617604-117baba5-2ef4-4c0b-afda-bd8427e9acbc.png">
@@ -205,7 +206,7 @@ We double-checked all our routes in Insomnia, to ensure that we could log in, re
 
 #### ➡️ Components
 
-Once we understood which pages we would have on our front-end, we discussed who would do which React component. This does not mean everyone focused only on their component. Since we were in three, we have been aware that if we wanted to build as much as possible into the front-end, we would have to work in pairs or all of us together to maximize time as much as possible. It happened several times when someone began to build a component that was then taken over by another team member, who then finished building it.
+Once we understood which pages we would have on our frontend, we discussed who would do which React component. This does not mean everyone focused only on their component. Since we were in a group of three, we have been aware that if we wanted to build as much as possible into the frontend, we would have to work in pairs or all of us together to maximize time as much as possible. It happened several times when someone began to build a component that was then taken over by another team member, who then finished building it.
 
 I initially started building navbar, a God’s business profile page, and posting, editing, and deleting comments. Throughout the week, I have created our database. As we began to run out of time two days before the end, I decided to help Adrian with his components. As Adrian felt more comfortable with the styling, he took it upon himself to style his components, while I focused more on implementing the functions within those components. In this way, I also built most functions within the registration, login, and post, edit, delete Gods. If I encountered some problems, Richard gave me a hand, and we solved the problems together.
 
@@ -230,7 +231,7 @@ Navbar is visible in all components, except the landing page and the create-god 
 
    - #### God’s business profile page
 
-```GodsInfoPage``` component is intended for the presentation of business, a.k.a representation of a God. When we built the back-end, we didn’t want to call the Gods by IDs, but by their names. When I called API, I thus called an individual God according to his name:
+```GodsInfoPage``` component is intended for the presentation of business, a.k.a representation of a God. When we built the backend, we didn’t want to call the Gods by IDs, but by their names. When I called API, I thus called an individual God according to his name:
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/83227280/129618238-927aa65f-b868-4737-98c7-5da19b30d672.png">
@@ -401,32 +402,32 @@ I created all the assets shown below using Adobe Photoshop. I found all the imag
 
 + ### Bugs
 
-   - When a user registers, he can also do it only with admin@. I definitely need to change this. 
+   - When a user registers, he can only do this with admin@, I definitely need to change this
 
 + ### Challenges
 
-   - Not having enough time to give admin extra rights on the front-end.
+   - Not having enough time to give admin extra rights on the frontend.
    - Not having enough time to sort the navbar view depending on meeting conditions, like what the user can view while logged in. 
-   - Building database. With so rich Greek mythology, it was impossible to include more Greek Gods than I managed to include at the end. There are hundreds and hundreds Greek deities and to include all of them it would take months and months to achieve it. 
+   - Building the database. With so much rich Greek mythology, it was impossible to include more Gods than I have already added in the time frame. There are hundreds and hundreds of Greek deities and to include all of them would take months to achieve.
 
 + ### Wins
 
    - Collaborating as a team has been such a pleasure, and I learned so much from my teammates, especially their unique approach to solving problems.
-   - Linking the back-end and front-end for the first time, and tailoring our back-end to meet our front-end needs.
+   - Linking the backend and frontend for the first time, and tailoring our backend to meet our frontend needs.
    - Building our own database.
    - Going further with React.js and building more complex components.
-   - Managing to implement almost all functions on the front-end that we built on the back-end.
+   - Managing to implement almost all functions on the frontend that we built on the backend.
 
 <br />
 
-## Extra features and Key learnings
+## Future features and Key learnings
 
-+ ### Extra features
++ ### Future features
 
    - Forgot to add the website logo, despite already being created with Adobe Photoshop.
-   - Breaking our front-end into more components and reuse them to avoid code repetition.
+   - Breaking our frontend into more components and reuse them to avoid code repetition.
    - Making our app more responsive, especially with smaller screens. 
-   - Giving admin the power to edit or delete user’s comments. We managed to do it on the back-end, but we didn’t have enough time to implement it on the front-end.
+   - Giving admin the power to edit or delete user’s comments. We managed to do it on the backend, but we didn’t have enough time to implement it on the frontend.
    - Adding an option where someone who registers as a God can subsequently enter their details, not solely upon registration. Currently, if a person who has registered as a God does not enter his or her details, he or she cannot do so subsequently. A button inside the profile page should solve this problem. 
    - Editing, deleting users.
    - When creating a page, a God can upload a logo or image of his choice.
